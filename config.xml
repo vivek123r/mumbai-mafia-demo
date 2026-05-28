@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.dn.games.mumbaimafia" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Mumbai Mafia</name>
+    <description>Mini game demo inspired by Mumbai Mafia - built with Apache Cordova and Sencha Ext JS</description>
+    <author email="dev@mumbaimafia.game" href="https://mumbaimafia.game">Mumbai Mafia Dev</author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarBackgroundColor" value="#0a0a0a" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <platform name="android">
+        <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
+            <application android:usesCleartextTraffic="true" />
+        </edit-config>
+        <preference name="android-minSdkVersion" value="22" />
+        <preference name="android-targetSdkVersion" value="36" />
+    </platform>
+</widget>
